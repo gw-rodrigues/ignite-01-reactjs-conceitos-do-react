@@ -15,8 +15,6 @@ export function TaskList() {
   const [newTaskTitle, setNewTaskTitle] = useState('');
   const maxTasks = 999;
 
-  console.log(tasks)
-
   function generateRandomId(){
     // Retorna random id 'único' entre 1 e o máximo de tasks, re-executa ate ser único.
     let randomId = Math.floor(Math.random() * maxTasks + 1)
